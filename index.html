@@ -1,98 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"></meta>
+  <meta charset="UTF-8" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  ></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  ></meta>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <title>Moosani Technologies Inc.</title>
 
-  <link
-    rel="stylesheet"
-    href="./CSS Sheets/stylesheet.css"
-  ></link>
+  <link rel="stylesheet" href="./CSS Sheets/stylesheet.css" />
 
-  <link
-    rel="stylesheet"
-    href="./CSS Sheets/bootstrap.min.css"
-  ></link>
+  <link rel="stylesheet" href="./CSS Sheets/bootstrap.min.css" />
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Righteous|Oswald:600"
-    rel="stylesheet"
-  ></link>
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Oswald:600" rel="stylesheet" />
 
-  <link
-    rel="shortcut icon"
-    href="data:image/jpeg;base64,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"
-  ></link>
+  <link rel="shortcut icon"
+    href="data:image/jpeg;base64,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" />
 
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 </head>
 
 <body class="main">
-  <nav
-    class="navbar navbar-expand-lg navbar-light fixed"
-    style="background-color: #e3f2fd;"
-  >
-    <a
-      class="navbar-brand"
-      href="#"
-    >
-      <img
-        src="https://www.swatch.com/dist/core/img/logo/swatch-logo.svg?v389"
-        width="100"
-        height="40"
-        alt="brand-logo"
-      >
+  <nav class="navbar navbar-expand-lg navbar-light fixed" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">
+      <img src="https://www.swatch.com/dist/core/img/logo/swatch-logo.svg?v389" width="100" height="40"
+        alt="brand-logo">
     </a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div
-      class="collapse navbar-collapse"
-      id="navbarSupportedContent"
-    >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a
-            class="nav-link"
-            href="#"
-          >
+          <a class="nav-link" href="#">
             HOME
 
             <span class="sr-only">(current)</span>
@@ -100,91 +55,45 @@
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >WOMEN</a>
+          <a class="nav-link" href="#">WOMEN</a>
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >MEN</a>
+          <a class="nav-link" href="#">MEN</a>
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >WATCHES</a>
+          <a class="nav-link" href="#">WATCHES</a>
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >SUNGLASSES</a>
+          <a class="nav-link" href="#">SUNGLASSES</a>
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >SERVICES</a>
+          <a class="nav-link" href="#">SERVICES</a>
         </li>
 
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >COLLECTION</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">COLLECTION</a>
 
-          <div
-            class="dropdown-menu"
-            aria-labelledby="navbarDropdown"
-          >
-            <a
-              class="dropdown-item"
-              href="#"
-            >WORLDHOOD</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">WORLDHOOD</a>
 
-            <a
-              class="dropdown-item"
-              href="#"
-            >SWATCHXYOU</a>
+            <a class="dropdown-item" href="#">SWATCHXYOU</a>
 
-            <a
-              class="dropdown-item"
-              href="#"
-            >SWATCHXYOU</a>
+            <a class="dropdown-item" href="#">SWATCHXYOU</a>
 
-            <a
-              class="dropdown-item"
-              href="#"
-            >HAPPY HOLIDAYS</a>
+            <a class="dropdown-item" href="#">HAPPY HOLIDAYS</a>
 
-            <a
-              class="dropdown-item"
-              href="#"
-            >TIME TO SWATCH</a>
+            <a class="dropdown-item" href="#">TIME TO SWATCH</a>
 
             <div class="dropdown-divider"></div>
 
-            <a
-              class="dropdown-item"
-              href="#"
-            >NEW RELEASES</a>
+            <a class="dropdown-item" href="#">NEW RELEASES</a>
 
-            <a
-              class="dropdown-item"
-              href="#"
-            >MORE COLLECTIONS</a>
+            <a class="dropdown-item" href="#">MORE COLLECTIONS</a>
           </div>
         </li>
       </ul>
@@ -192,17 +101,9 @@
       <!-- === SearchBar start === -->
 
       <form class="form-inline my-2 my-lg-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        ></input>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
 
-        <button
-          class="btn btn-outline-success my-2 my-sm-0"
-          type="submit"
-        >Search</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
 
       <!-- === SearchBar closed === -->
@@ -210,42 +111,22 @@
 
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a
-            class="nav-link logoTrnsprncy"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <img
-              class="iconSize"
-              src="https://img.icons8.com/windows/2x/user-male-circle.png"
-              alt="signup"
-            >
+          <a class="nav-link logoTrnsprncy" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img class="iconSize" src="https://img.icons8.com/windows/2x/user-male-circle.png" alt="signup">
           </a>
 
-          <div
-            class="dropdown-menu dropdown-menu-right"
-            aria-labelledby="navbarDropdown"
-          >
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <span class="dropdown-item hoverset">MY ACOUNT</span>
 
             <div class="dropdown-divider"></div>
 
             <a href="#">
-              <button
-                class="dropdown-item fontTrnsprncy"
-                type="button"
-              >SIGN IN</button>
+              <button class="dropdown-item fontTrnsprncy" type="button">SIGN IN</button>
             </a>
 
             <a href="#">
-              <button
-                class="dropdown-item fontTrnsprncy"
-                type="button"
-              >CREATE AN ACCOUNT</button>
+              <button class="dropdown-item fontTrnsprncy" type="button">CREATE AN ACCOUNT</button>
             </a>
 
             <!-- <a class="dropdown-item" href="#">WORLDHOOD</a>
@@ -264,26 +145,12 @@
 
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a
-            class="nav-link logoTrnsprncy"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <img
-              class="iconSize"
-              src="https://img.icons8.com/windows/2x/shopping-cart.png"
-              alt="signup"
-            >
+          <a class="nav-link logoTrnsprncy" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img class="iconSize" src="https://img.icons8.com/windows/2x/shopping-cart.png" alt="signup">
           </a>
 
-          <div
-            class="dropdown-menu dropdown-menu-right"
-            aria-labelledby="navbarDropdown"
-          >
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <span class="dropdown-item hoverset">YOUR CART</span>
 
             <div class="dropdown-divider"></div>
@@ -310,92 +177,51 @@
   <!-- === navbar section closed === -->
   <!-- === Slider Section Start === -->
 
-  <div
-    id="carouselExampleIndicators"
-    class="carousel slide"
-    data-ride="carousel"
-  >
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li
-        data-target="#carouselExampleIndicators"
-        data-slide-to="0"
-        class="active"
-      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 
-      <li
-        data-target="#carouselExampleIndicators"
-        data-slide-to="1"
-      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 
-      <li
-        data-target="#carouselExampleIndicators"
-        data-slide-to="2"
-      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 
-      <li
-        data-target="#carouselExampleIndicators"
-        data-slide-to="3"
-      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     </ol>
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img
-          class="d-block w-100"
+        <img class="d-block w-100"
           src="https://www.swatch.com/var/storage/images/media/images/2018/slider_noah_skin-irony_pre-release-2008x1130_20180514/1771766-11-eng-INT/slider_noah_skin-irony_pre-release-2008x1130_20180514.jpg"
-          alt="First slide"
-        >
+          alt="First slide">
       </div>
 
       <div class="carousel-item">
-        <img
-          class="d-block w-100"
+        <img class="d-block w-100"
           src="https://www.swatch.com/var/storage/images/media/stagepool/slider_think-fun_release_2008x1130_20180714/1786993-1-eng-INT/slider_think-fun_release_2008x1130_20180714.jpg"
-          alt="Second slide"
-        >
+          alt="Second slide">
       </div>
 
       <div class="carousel-item">
-        <img
-          class="d-block w-100"
+        <img class="d-block w-100"
           src="https://www.swatch.com/var/storage/images/media/images/2018/stage-happy-holidays/1802910-2-eng-INT/stage-happy-holidays.jpg"
-          alt="Third slide"
-        >
+          alt="Third slide">
       </div>
 
       <div class="carousel-item">
-        <img
-          class="d-block w-100"
+        <img class="d-block w-100"
           src="https://www.swatch.com/var/storage/images/media/stagepool/slider_drl_swatch-gate_2008x1130_20180829/1786027-1-eng-INT/slider_drl_swatch-gate_2008x1130_20180829.jpg"
-          alt="Third slide"
-        >
+          alt="Third slide">
       </div>
     </div>
 
-    <a
-      class="carousel-control-prev"
-      href="#carouselExampleIndicators"
-      role="button"
-      data-slide="prev"
-    >
-      <span
-        class="carousel-control-prev-icon"
-        aria-hidden="true"
-      ></span>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
       <span class="sr-only">Previous</span>
     </a>
 
-    <a
-      class="carousel-control-next"
-      href="#carouselExampleIndicators"
-      role="button"
-      data-slide="next"
-    >
-      <span
-        class="carousel-control-next-icon"
-        aria-hidden="true"
-      ></span>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
       <span class="sr-only">Next</span>
     </a>
@@ -412,16 +238,16 @@
     </h4>
 
     <p>
-      Colorful, energetic, bold and Swiss-made, Swatch’s DNA ticks through all of our stylish wristwatches. From minimalist, classic looks to bright and wild patterns, Swatch’s current collection has a watch that complements every unique style and personality.
+      Colorful, energetic, bold and Swiss-made, Swatch’s DNA ticks through all of our stylish wristwatches. From
+      minimalist, classic looks to bright and wild patterns, Swatch’s current collection has a watch that complements
+      every unique style and personality.
     </p>
 
     <div class="card-deck crd_size">
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/media/images/2017/hpblockcolorwomen/1539344-8-eng-INT/hpblockcolorwomen_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">WOMEN'S WATCHES</h5>
@@ -432,19 +258,14 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/media/images/2017/colormen/1539368-7-eng-INT/colormen_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">MEN'S WATCHES</h5>
@@ -455,19 +276,14 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/media/teaserpool/2018/october/hp-block_dw_ge259_632x456_20180714/1794728-1-eng-BE/hp-block_dw_ge259_632x456_20180714_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">DEEP WONDER</h5>
@@ -478,33 +294,26 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/swatchcom/hp-block_suop704_worldhood-632x456_20180622/1779013-2-eng-INT/hp-block_suop704_worldhood-632x456_20180622_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">WORLDHOOD</h5>
 
           <p class="card-text">
-            When the future is knitted into tiny stories and ancient masterpieces come back to life with the best filters.
+            When the future is knitted into tiny stories and ancient masterpieces come back to life with the best
+            filters.
           </p>
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
     </div>
@@ -518,11 +327,9 @@
   <div class="crd_margin col-lg-10 mt-5">
     <div class="card-deck crd_size">
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/swatchcom/hp-block_skin_irony_syxs106_lifestyle_0907-632x456_20180608/1778418-2-eng-INT/hp-block_skin_irony_syxs106_lifestyle_0907-632x456_20180608_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">SKIN IRONY</h5>
@@ -533,19 +340,14 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/media/images/2018/hp-block_swatch-glam_632x456_2_20181031/1797556-1-eng-INT/hp-block_swatch-glam_632x456_2_20181031_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">SWATCH GLAM</h5>
@@ -556,19 +358,14 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/swatchcom/hpblock_s51irony_632x456_20170706_412/1532358-2-eng-INT/hpblock_s51irony_632x456_20170706_412_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">SISTEM51 IRONY</h5>
@@ -579,19 +376,14 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://www.swatch.com/var/storage/images/media/images/2018/hp-block_hodinkee-18_632x456_20181123/1802572-1-eng-INT/hp-block_hodinkee-18_632x456_20181123_teaser_4.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">SWATCH X HODINKEE</h5>
@@ -602,10 +394,7 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
     </div>
@@ -617,80 +406,66 @@
   <div class="crd_margin  col-lg-10 mt-5">
     <div class="card-deck crd_size">
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://cdn.shop.swatch.com//media/wysiwyg/Collection/2018/Xmas-landing-page/men-women/collection_ge262_women-men_499x340_20181122.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">GIFT FOR HER</h5>
 
           <p class="card-text">
-            Make her wrist shine with a unique watch that lights up the room. With plenty of fashionable and feminine styles, colors and sizes to fit every taste.
+            Make her wrist shine with a unique watch that lights up the room. With plenty of fashionable and feminine
+            styles, colors and sizes to fit every taste.
           </p>
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://cdn.shop.swatch.com//media/wysiwyg/Collection/2018/Mediterranean-views/collection_portofino_mediterranean_views_gw193_koy5519_499x340_20180608.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">MEDITERRANEAN VIEWS</h5>
 
           <p class="card-text">
-            Summer days aren’t too far away! Dive into a sea of stripes and breezy looks, inspired by the place where the Mediterranean meets the sky.
+            Summer days aren’t too far away! Dive into a sea of stripes and breezy looks, inspired by the place where
+            the Mediterranean meets the sky.
           </p>
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://cdn.shop.swatch.com//media/wysiwyg/Collection/2018/Club-watch/collection_WATCHCLUB_499x340_20171208_EN.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">SWATCH CLUB</h5>
 
           <p class="card-text">
-            This Year's New Swatch Club Release Comes To Life In FOLLOW THE DOTS, Swirling With A Bright Blue Geometric Pattern And Tiny, Colorful Dots. Special Packaging.
+            This Year's New Swatch Club Release Comes To Life In FOLLOW THE DOTS, Swirling With A Bright Blue Geometric
+            Pattern And Tiny, Colorful Dots. Special Packaging.
           </p>
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
 
       <div class="card">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://cdn.shop.swatch.com//media/wysiwyg/Collection/2018/Thyssen/collection_thyssen_suoz297_499x340_20181107.jpg"
-          alt="Card image cap"
-        >
+          alt="Card image cap">
 
         <div class="card-body">
           <h5 class="card-title">ART WATCHES</h5>
@@ -701,10 +476,7 @@
         </div>
 
         <div class="card-footer">
-          <a
-            href="#"
-            class="btn btn-primary"
-          >Add to Cart</a>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
     </div>
@@ -718,17 +490,15 @@
       <h5 class="footer_coverPhoto_card_title">QUALITY STANDARDS</h5>
 
       <p class="footer_coverPhoto_card_text">
-        All Flik Flak kids’ watches start their life with a month of strict tests in a dedicated quality control laboratory. Each watch component, including the strap and any accessories, is checked to ensure it is 100% safe for wear.
+        All Flik Flak kids’ watches start their life with a month of strict tests in a dedicated quality control
+        laboratory. Each watch component, including the strap and any accessories, is checked to ensure it is 100% safe
+        for wear.
       </p>
 
       <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
     </div>
 
-    <img
-      class="card-img-bottom"
-      src="./images/footerImg.png"
-      alt="Card image cap"
-    >
+    <img class="card-img-bottom" src="./images/footerImg.png" alt="Card image cap">
   </div>
 
   <!-- === Footer Wall Image Section closed === -->
@@ -741,12 +511,7 @@
       <div class="card-header row footer_card_top">
         <div class="card-body icon_card_body">
           <a href="#">
-            <img
-              width="45"
-              height="45"
-              src="./images/icons8-hospital-filled-100.png"
-              alt="Card Medical Icon"
-            >
+            <img width="45" height="45" src="./images/icons8-hospital-filled-100.png" alt="Card Medical Icon">
           </a>
 
           <h6 class="card-title">SWISS MADE</h6>
@@ -754,12 +519,7 @@
 
         <div class="card-body icon_card_body">
           <a href="#">
-            <img
-              width="45"
-              height="45"
-              src="./images/icons8-replace-100.png"
-              alt="Card Replace Icon"
-            >
+            <img width="45" height="45" src="./images/icons8-replace-100.png" alt="Card Replace Icon">
           </a>
 
           <h6 class="card-title">EASY RETURN</h6>
@@ -767,12 +527,7 @@
 
         <div class="card-body icon_card_body">
           <a href="#">
-            <img
-              width="50"
-              height="50"
-              src="./images/icons8-in-transit-filled-100.png"
-              alt="Card Cap Icon"
-            >
+            <img width="50" height="50" src="./images/icons8-in-transit-filled-100.png" alt="Card Cap Icon">
           </a>
 
           <h6 class="card-title">DELIVERY</h6>
@@ -780,12 +535,7 @@
 
         <div class="card-body icon_card_body">
           <a href="#">
-            <img
-              width="45"
-              height="45"
-              src="./images/icons8-lock-filled-100.png"
-              alt="Card Lock Icon"
-            >
+            <img width="45" height="45" src="./images/icons8-lock-filled-100.png" alt="Card Lock Icon">
           </a>
 
           <h6 class="card-title">DR. SWATCH</h6>
@@ -793,12 +543,7 @@
 
         <div class="card-body icon_card_body">
           <a href="#">
-            <img
-              width="50"
-              height="50"
-              src="./images/icons8-heart-outline-filled-100.png"
-              alt="Card Heart Icon"
-            >
+            <img width="50" height="50" src="./images/icons8-heart-outline-filled-100.png" alt="Card Heart Icon">
           </a>
 
           <h6 class="card-title">SWATCH WARRANTY</h6>
@@ -806,12 +551,7 @@
 
         <div class="card-body icon_card_body">
           <a href="#">
-            <img
-              width="45"
-              height="45"
-              src="./images/icons8-happy-filled-100.png"
-              alt="Card Face Icon"
-            >
+            <img width="45" height="45" src="./images/icons8-happy-filled-100.png" alt="Card Face Icon">
           </a>
 
           <h6 class="card-title">
@@ -937,10 +677,7 @@
           </ul>
 
           <div class="column">
-            <div
-              class=""
-              style="width: 18rem;"
-            >
+            <div class="" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">NEWSLETTER:</h5>
 
@@ -948,10 +685,7 @@
                   Get first access to exclusive watches, online pre-releases and much more!
                 </p>
 
-                <a
-                  href="#"
-                  class="btn btn-danger btn-lg btn-block"
-                >REGISTER</a>
+                <a href="#" class="btn btn-danger btn-lg btn-block">REGISTER</a>
               </div>
             </div>
 
@@ -960,68 +694,33 @@
                 <h5 class="card-title follow_us">FOLLOW US</h5>
 
                 <a href="#">
-                  <img
-                    width="40"
-                    height="40"
-                    src="./images/facebook-icon-96.png"
-                    alt="youtube icon"
-                  >
+                  <img width="40" height="40" src="./images/facebook-icon-96.png" alt="youtube icon">
                 </a>
 
                 <a href="#">
-                  <img
-                    width="40"
-                    height="40"
-                    src="./images/twitter-icon-96.png"
-                    alt="youtube icon"
-                  >
+                  <img width="40" height="40" src="./images/twitter-icon-96.png" alt="youtube icon">
                 </a>
 
                 <a href="#">
-                  <img
-                    width="40"
-                    height="40"
-                    src="./images/youtube-icon-96.png"
-                    alt="youtube icon"
-                  >
+                  <img width="40" height="40" src="./images/youtube-icon-96.png" alt="youtube icon">
                 </a>
 
                 <a href="#">
-                  <img
-                    width="40"
-                    height="40"
-                    src="./images/instagram-icon-96.png"
-                    alt="youtube icon"
-                  >
+                  <img width="40" height="40" src="./images/instagram-icon-96.png" alt="youtube icon">
                 </a>
               </div>
 
-              <div
-                class="payment_method_div"
-                style="width: 18rem;"
-              >
+              <div class="payment_method_div" style="width: 18rem;">
                 <div class="card-body payment_method">
                   <h5 class="card-title payment_method_h5">PAYMENT METHODS:</h5>
 
-                  <img
-                    src="./images/visa.svg"
-                    alt="visa-icon"
-                  >
+                  <img src="./images/visa.svg" alt="visa-icon">
 
-                  <img
-                    src="./images/mastercard.svg"
-                    alt="mastercard-icon"
-                  >
+                  <img src="./images/mastercard.svg" alt="mastercard-icon">
 
-                  <img
-                    src="./images/american-express.svg"
-                    alt="american-express-icon"
-                  >
+                  <img src="./images/american-express.svg" alt="american-express-icon">
 
-                  <img
-                    src="./images/discover.svg"
-                    alt="western-union-icon"
-                  >
+                  <img src="./images/discover.svg" alt="western-union-icon">
                 </div>
               </div>
             </div>
@@ -1033,51 +732,27 @@
       <!-- === Footer bottom Section Start === -->
 
       <div class="card-footer text-muted footer_bottom_link01">
-        <a
-          href="#"
-          class="footer_bottom_link_first"
-        >NEWSLETTER</a>
+        <a href="#" class="footer_bottom_link_first">NEWSLETTER</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >CUSTOMER SERVICE</a>
+        <a href="#" class="footer_bottom_links">CUSTOMER SERVICE</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >WATCH CARE</a>
+        <a href="#" class="footer_bottom_links">WATCH CARE</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >FIND US</a>
+        <a href="#" class="footer_bottom_links">FIND US</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >TERMS & CONDITIONS</a>
+        <a href="#" class="footer_bottom_links">TERMS & CONDITIONS</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >PRIVACY</a>
+        <a href="#" class="footer_bottom_links">PRIVACY</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >ACCESSIBILITY</a>
+        <a href="#" class="footer_bottom_links">ACCESSIBILITY</a>
 
-        <a
-          href="#"
-          class="footer_bottom_links"
-        >JOBS</a>
+        <a href="#" class="footer_bottom_links">JOBS</a>
 
         <p>
           &copy; SWATCH AG 2018, ALL RIGHTS RESERVED: SWISS WATCHES
 
           <span class="span01">
-DEVELOPED BY: MOOSANI TECHNOLOGIES INC.
+            DEVELOPED BY: MOOSANI TECHNOLOGIES INC.
           </span>
         </p>
 
@@ -1088,4 +763,5 @@ DEVELOPED BY: MOOSANI TECHNOLOGIES INC.
 
   <!-- === Footer Section Closed === -->
 </body>
+
 </html>
