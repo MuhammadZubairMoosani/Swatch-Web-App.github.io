@@ -114,13 +114,16 @@ h5 {
 .list_gap {
     margin-left: 5%;
 }
-.list_gap>a>li {
+.list_gap>li>a {
     color: #646464;
     font-size: 17px;
     font-family: 'swatch_ct_webregular',Arial,sans-serif !important;
-    padding-top: .6em;
 }
-.list_gap>a>:hover{
+.list_gap>li {
+    padding-top: .6em;
+
+}
+.list_gap>li>:hover{
     color: #e2001a;
     cursor: pointer;
 }
